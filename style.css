@@ -1,4 +1,52 @@
-body {background-color:tan;}
-h1{color:green;}
-
-
+body {
+    background-color: black;
+    font-family: arial;
+    color: white;
+}
+h1{
+    color:grey;
+    font-family: verdana;
+    text-align: left;
+}
+div.maindiv {
+    background-color: white;
+    color: black;
+    width: 500px;
+    padding: 20px;
+    border-radius: 25px;
+    box-align: center;
+    text-align: left;
+}
+footer {
+    text-align: left;
+    font-family: arial;
+}
+form {
+    text-align: center;
+    width: 400px;
+    padding-left: 85px;
+}
+label {
+    width: 120px;
+    text-align: left;
+    clear: left;
+    padding-right: 30px;
+}
+div.seconddiv {
+  text-align: left;
+  width: 400px;
+  padding-left: 85px;
+  line-height: 10px;
+}
+input {
+    width: 110px;
+}
+input, label {
+    float: left;
+}
+select {
+    float: left;
+}
+input[type="range"] {
+    width: 100px;
+}
