@@ -12,6 +12,7 @@ function compute()
     var principal = document.getElementById("principal").value;
     var rate = document.getElementById("rate").value;
     var years = document.getElementById("years").value;
+    var investment = document.getElementById("principal").value;
     //sets mathematical formulas
     var interest = principal * years * rate /100;
     var year = new Date().getFullYear()+parseInt(years);
@@ -23,12 +24,16 @@ function compute()
     if (principal < 1) {
       result = alert('Enter a positive number');
       document.getElementById("principal").focus()
+  } else if (principal = "") {
+    result = alert('Enter a positive number');
+    document.getElementById("principal").focus()
     /*displays the results for the user should all inputs be deturmined valid
     highlighting the important values*/
-    } else {
+  } else {
       result = document.getElementById("result").innerHTML="If you deposit <mark> $"
-        + principal + "</mark>,<br></br> at an interest rate of <mark>" + rate +
-         "%</mark>.<br></br> You will recieve an amount of <mark>$" + amount +
-        "</mark>, <br></br> in the year <mark>" + year + "</mark><br></br>";
+        + investment + "</mark>,<br></br> at an interest rate of <mark>" + rate +
+         "%</mark>.<br></br>You will recieve an amount of <mark>$" + interest +
+        "</mark>. <br></br>For a total return of <mark>$" + amount +
+        "</mark>, <br></br>in the year <mark>" + year + "</mark>.<br></br>";
       }
     }
